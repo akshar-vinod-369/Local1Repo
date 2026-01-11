@@ -1,0 +1,10 @@
+/* Styles for the label when the associated input is checked */
+input:checked + label {
+  color: red; /* Changes the text color of the label to red when checked */
+  font-weight: bold;
+}
+
+/* Optional: additional styles for the checkbox itself when checked */
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 3px hotpink; /* Adds a glowing effect around the box */
+}

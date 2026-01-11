@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create User Account</title>
+</head>
+<body>
+
+    <h2>Create An Account</h2>
+
+    <!-- 
+        The 'action' attribute specifies where to send the form-data when a form is submitted.
+        The 'method' attribute specifies the HTTP method (POST is recommended for sensitive data like passwords).
+    -->
+    <form action="submit_form.php" method="POST">
+        <div>
+            <label for="username">Username:</label>
+            <!-- The 'input' tag creates form fields. The 'type' attribute defines the field type. -->
+            <input type="text" id="username" name="username" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <br>
+        <div>
+            <label for="password">Password:</label>
+            <!-- 'type="password"' masks the input characters for security. -->
+            <input type="password" id="password" name="password" required>
+        </div>
+        <br>
+        <div>
+            <label for="psw-repeat">Repeat Password:</label>
+            <input type="password" id="psw-repeat" name="psw-repeat" required>
+        </div>
+        <br>
+        <!-- The 'button' with type="submit" creates a submit button for the form. -->
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
